@@ -1,0 +1,163 @@
+:root {
+    --dark-blue: #0A3871;
+    --white: #FFFFFF;
+    --gray: #67808E;
+    --light-blue: #E5E5E5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    background: var(--light-blue);
+
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+}
+
+header img {
+    position: absolute;
+    right: 80%;
+    width: 250px;
+    height: 120px;
+}
+
+
+main {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 700px;
+}
+
+.main-text-container .area,
+.main-text-message textarea {
+    outline: none;
+    border: none;
+    padding: 0;
+    min-width: 320px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 7rem;
+    line-height: 100%;
+}
+
+.main-text-container .exclamacion {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: center;
+
+}
+
+
+
+.main-text-container .exclamacion div {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-image: url('../images/exclamation.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-text-container .exclamacion p {
+    margin-left: 10px;
+    font-size: 3.6rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    color: var(--gray);
+}
+
+.main-text-container .btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn button,
+.main-text-message button {
+    width: 100%;
+    height: 130px;
+    padding: 0;
+    border-radius: 40px;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 19.36px;
+}
+
+.btn button:nth-child(1) {
+    color: var(--white);
+    background: var(--dark-blue);
+}
+
+.btn button:nth-child(2) {
+    margin-top: 30px;
+    color: var(--gray);
+}
+
+.main-text-message {
+    border-radius: 40px;
+    background: var(--white);
+}
+
+.main-text-message div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    padding: 20px;
+    background: var(--white);
+}
+
+.main-text-message textarea {
+    
+    border-radius: 20px;
+    background: var(--white);
+}
+
+.main-text-message button {
+    color: var(--dark-blue);
+    background: var(--white);
+}
+
+.main-text-message .text-one {
+    position: absolute;
+    bottom: calc(55%);
+    text-align: center;
+    background: var(--white);
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 150%;
+
+    /* z-index: 3; */
+    /* top: 100%; */
+    /* height: 60px; */
+    /* top: calc(100%-10px); */
+}
+
+
+.main-text-message .text-two {
+    position: absolute;
+    text-align: center;
+    bottom: calc(35%);
+    font-size: 5.2rem;
+    font-weight: 300;
+    line-height: 70px;
+    background: var(--white);
+}
