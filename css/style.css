@@ -72,6 +72,9 @@ header div {
     line-height: 100%;
 }
 
+.decrypt-area{
+    color: var(--gray);
+}
 .encrypt-exclamation {
     width: 100%;
     height: 30px;
